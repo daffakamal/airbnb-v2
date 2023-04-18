@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 
 function Header() {
   return (
@@ -20,6 +20,27 @@ function Header() {
             type="text"
           />
           <MagnifyingGlassIcon className="h-12 p-4" />
+        </div>
+        <div className="flex items-center space-x-6 mx-6 text-xs whitespace-nowrap text-white">
+          <div className="grid justify-items-start cursor-pointer hover:underline hover:underline-offset-2">
+            <p>Hello User</p>
+            <p className="font-extrabold md:text-sm">Account & Lists</p>
+          </div>
+          <div className="grid justify-items-start cursor-pointer hover:underline hover:underline-offset-2">
+            <p>Returns</p>
+            <p className="font-extrabold md:text-sm">& Orders</p>
+          </div>
+          <div className="relative flex items-center cursor-pointer hover:underline hover:underline-offset-2">
+            <div className="relative">
+              <span className="absolute top-0 right-0 md:-right-1 h-4 w-4 bg-yellow-400 rounded-full text-center tex-black font-bold">
+                0
+              </span>
+              <ShoppingCartIcon className="h-10" />
+            </div>
+            <p className="hidden md:inline font-extrabold md:text-sm mt-2">
+              Basket
+            </p>
+          </div>
         </div>
       </div>
       {/* Bottom Nav */}
