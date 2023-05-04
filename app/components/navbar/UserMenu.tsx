@@ -10,7 +10,7 @@ const UserMenu = () => {
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
   }, []);
-  
+
   return (
     <div className="relative">
       <div className="flex flex-row items-center gap-3">
@@ -21,8 +21,8 @@ const UserMenu = () => {
           Airbnb your home
         </div>
         <div
-          className="p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full hover:shadow-md transition cursor-pointer"
           onClick={toggleOpen}
+          className="p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full hover:shadow-md transition cursor-pointer"
         >
           <AiOutlineMenu />
           <div className="hidden md:block">
